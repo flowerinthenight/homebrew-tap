@@ -4,15 +4,15 @@ class Kubepfm < Formula
   url "https://github.com/flowerinthenight/kubepfm/archive/v0.0.2.tar.gz"
   sha256 "3b1f680b821635600597afb5b72b3d3db6ac6af4ffca4afaab887bf68a050151"
 
-  depends_on "go" => :build
+  depends_on "go"
 
   def install
     ENV["GOPATH"] = buildpath
     ENV["GO111MODULE"] = "on"
     ENV["GOFLAGS"] = "-mod=vendor"
-    bin_path = buildpath/"src/github.com/flowerinthenight/kubepfm"
-    bin_path.install Dir["*"]
-    cd bin_path do
+    ENV["PATH"] = "#{ENV["PATH"]}:#{buildpath}/bin"
+    (buildpath/"src/github.com/flowerinthenight/kubepfm").install buildpath.children
+    cd "src/github.com/flowerinthenight/kubepfm" do
       system "go", "build", "-o", bin/"kubepfm", "."
     end
   end
