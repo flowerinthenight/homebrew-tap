@@ -10,7 +10,7 @@ class Kubepfm < Formula
     ENV["GOPATH"] = buildpath
     ENV["GO111MODULE"] = "on"
     ENV["GOFLAGS"] = "-mod=vendor"
-    bin_path = buildpath/"src/github.com/flowerinthenight/Kubepfm"
+    bin_path = buildpath/"src/github.com/flowerinthenight/kubepfm"
     bin_path.install Dir["*"]
     cd bin_path do
       system "go", "build", "-o", bin/"kubepfm", "."
@@ -18,7 +18,6 @@ class Kubepfm < Formula
   end
 
   test do
-    system "false"
     assert_match /Simple port-forward wrapper tool for multiple pods/, shell_output("#{bin}/kubepfm -h", 0)
   end
 end
