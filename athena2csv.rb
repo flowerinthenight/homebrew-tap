@@ -1,4 +1,4 @@
-class Kubepfm < Formula
+class Athena2csv < Formula
   desc "Query AWS Athena and download the result as CSV."
   homepage "https://github.com/flowerinthenight/athena2csv"
   url "https://github.com/flowerinthenight/athena2csv/archive/v0.0.2.tar.gz"
