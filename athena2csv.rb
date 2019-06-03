@@ -1,8 +1,8 @@
 class Athena2csv < Formula
   desc "Query AWS Athena and download the result as CSV."
   homepage "https://github.com/flowerinthenight/athena2csv"
-  url "https://github.com/flowerinthenight/athena2csv/archive/v0.0.2.tar.gz"
-  sha256 "529f66f2dfcaed393938990e9a7cc73e230ca11ff473ad5e47dc04a135a6ddfa"
+  url "https://github.com/flowerinthenight/athena2csv/archive/v0.0.3.tar.gz"
+  sha256 "a185fe5cec1e8c63627ecfb2aefce0cb4dc1ebe898c5456c14760fb573fa9d76"
 
   depends_on "go" => :build
 
@@ -18,6 +18,6 @@ class Athena2csv < Formula
   end
 
   test do
-    assert_match /execute athena query and download csv result/, shell_output("#{bin}/athena2csv -h", 0)
+    assert_match /Execute athena query and download csv result/, shell_output("#{bin}/athena2csv -h", 0)
   end
 end
