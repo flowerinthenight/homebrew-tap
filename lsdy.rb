@@ -2,7 +2,7 @@ class Kubepfm < Formula
   desc "A tool to query/inspect DynamoDB tables."
   homepage "https://github.com/flowerinthenight/lsdy"
   url "https://github.com/flowerinthenight/lsdy/archive/v0.0.1.tar.gz"
-  sha256 "a4ef2289fb0bee0f7bf684aaa65688fd954f6d5b76e4733ee484c4356dd50773"
+  sha256 "a5c56f8e53cf46368a958c01f6628eca1ebdab54feeb2788fcd5f0301bc8d95e"
 
   depends_on "go"
 
