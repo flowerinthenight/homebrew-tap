@@ -1,8 +1,8 @@
 class Lsdy < Formula
   desc "A tool to query/inspect DynamoDB tables."
   homepage "https://github.com/flowerinthenight/lsdy"
-  url "https://github.com/flowerinthenight/lsdy/archive/v0.0.1.tar.gz"
-  sha256 "a5c56f8e53cf46368a958c01f6628eca1ebdab54feeb2788fcd5f0301bc8d95e"
+  url "https://github.com/flowerinthenight/lsdy/archive/v0.0.3.tar.gz"
+  sha256 "8927a19d01693af7e371be5e92b555d77947727616f7ece7e0d2b8d259728130"
 
   depends_on "go"
 
