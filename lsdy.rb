@@ -1,4 +1,4 @@
-class Kubepfm < Formula
+class Lsdy < Formula
   desc "A tool to query/inspect DynamoDB tables."
   homepage "https://github.com/flowerinthenight/lsdy"
   url "https://github.com/flowerinthenight/lsdy/archive/v0.0.1.tar.gz"
