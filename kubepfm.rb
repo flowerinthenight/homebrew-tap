@@ -1,8 +1,8 @@
 class Kubepfm < Formula
   desc "A simple wrapper to kubectl port-forward for multiple pods."
   homepage "https://github.com/flowerinthenight/kubepfm"
-  url "https://github.com/flowerinthenight/kubepfm/archive/v1.0.0.tar.gz"
-  sha256 "a4ef2289fb0bee0f7bf684aaa65688fd954f6d5b76e4733ee484c4356dd50773"
+  url "https://github.com/flowerinthenight/kubepfm/archive/v1.1.0.tar.gz"
+  sha256 "9182c47a05434be49f1959c557b86f969e829fb29c7e6a0b196a4bf8e9d3d498"
 
   depends_on "go"
 
