@@ -2,16 +2,16 @@
 class Oops < Formula
   desc "Kubernetes-native testing tool."
   homepage "https://github.com/flowerinthenight/oops"
-  version "0.2.0"
+  version "0.2.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/flowerinthenight/oops/releases/download/v0.2.0/oops_0.2.0_darwin_amd64.tar.gz"
-    sha256 "2df2b09129c93e852d3d0b9245ba6b234a4af9c89aa04ba654c19ba5f73856e1"
+    url "https://github.com/flowerinthenight/oops/releases/download/v0.2.1/oops_0.2.1_darwin_amd64.tar.gz"
+    sha256 "3dee191d0e1c69ad818f51d425ab211b7fbc2e86c12c56cd189b85fb26a577ae"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/flowerinthenight/oops/releases/download/v0.2.0/oops_0.2.0_linux_amd64.tar.gz"
-      sha256 "111d9164880db9b6ed868b15a09a3154f73b59c5a010794d9002c8f7b82cac5e"
+      url "https://github.com/flowerinthenight/oops/releases/download/v0.2.1/oops_0.2.1_linux_amd64.tar.gz"
+      sha256 "14450d50cec20ec36cf8552b0841e3b0abc13f84f92a96ece78158e9aed9c731"
     end
   end
 
