@@ -2,16 +2,16 @@
 class Lsdy < Formula
   desc "DynamoDB query tool."
   homepage "https://github.com/flowerinthenight/lsdy"
-  version "1.6.0"
+  version "1.6.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/flowerinthenight/lsdy/releases/download/v1.6.0/lsdy_1.6.0_darwin_amd64.tar.gz"
-    sha256 "c57117ed49f4467be10332dc56b1feb27eabbdf994f9b829137be29ff84126b0"
+    url "https://github.com/flowerinthenight/lsdy/releases/download/v1.6.1/lsdy_1.6.1_darwin_amd64.tar.gz"
+    sha256 "17645448020f53dda9260c862c7a73de658ee92b4b1a0e74bc4e7f1824220430"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/flowerinthenight/lsdy/releases/download/v1.6.0/lsdy_1.6.0_linux_amd64.tar.gz"
-      sha256 "bd878f569689efe7cc5168c17c1ebc8c280e626d6df32677bfaf9b6f86443ef8"
+      url "https://github.com/flowerinthenight/lsdy/releases/download/v1.6.1/lsdy_1.6.1_linux_amd64.tar.gz"
+      sha256 "34e169cfa23eb27ec845589915c34933c5984c83895451a1a559d02125f32597"
     end
   end
 
