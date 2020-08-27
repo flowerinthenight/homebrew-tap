@@ -2,16 +2,16 @@
 class Dysync < Formula
   desc "Sync DynamoDB table across two AWS accounts."
   homepage "https://github.com/flowerinthenight/dysync"
-  version "1.0.4"
+  version "1.0.5"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/flowerinthenight/dysync/releases/download/v1.0.4/dysync_1.0.4_darwin_amd64.tar.gz"
-    sha256 "6ca567f75c4503758157046614807626bb3cd747283a956126817f85fa2914cd"
+    url "https://github.com/flowerinthenight/dysync/releases/download/v1.0.5/dysync_1.0.5_darwin_amd64.tar.gz"
+    sha256 "e78d1f7eefce44674449b84557650e7812c5dac9a0b76bdaa3c968d9a8af599d"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/flowerinthenight/dysync/releases/download/v1.0.4/dysync_1.0.4_linux_amd64.tar.gz"
-      sha256 "599dce77364b5edfccf4099bf3b16a53b8cfc14c74faf52c2a6383ef6a8228e5"
+      url "https://github.com/flowerinthenight/dysync/releases/download/v1.0.5/dysync_1.0.5_linux_amd64.tar.gz"
+      sha256 "1667813e04bfbb4349ec9df06725011f78fc299badd0d4ab24019fc213b3bf16"
     end
   end
 
