@@ -5,20 +5,20 @@
 class Lsdy < Formula
   desc "DynamoDB query tool."
   homepage "https://github.com/flowerinthenight/lsdy"
-  version "1.8.3"
+  version "1.8.4"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/flowerinthenight/lsdy/releases/download/v1.8.3/lsdy_1.8.3_darwin_amd64.tar.gz"
-      sha256 "b58d051c241d02913051e005d07fb90a21ab06a6b6ffda684aa117707cd4317f"
+      url "https://github.com/flowerinthenight/lsdy/releases/download/v1.8.4/lsdy_1.8.4_darwin_amd64.tar.gz"
+      sha256 "43028a3027f687e3b189c6d345635376c2beafc9a7eb8688b97d11931428f890"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/flowerinthenight/lsdy/releases/download/v1.8.3/lsdy_1.8.3_linux_amd64.tar.gz"
-      sha256 "e8b3465e7b415335c05d5ba4e1de77dfe30306870133bf006172c6fea2d068e3"
+      url "https://github.com/flowerinthenight/lsdy/releases/download/v1.8.4/lsdy_1.8.4_linux_amd64.tar.gz"
+      sha256 "f053a4b47972fd566f986fa823137b7ebea54d2f9075ca52341a5697dbc0ced7"
     end
   end
 
