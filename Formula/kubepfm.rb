@@ -5,20 +5,20 @@
 class Kubepfm < Formula
   desc "Simple port-forward wrapper tool for multiple pods."
   homepage "https://github.com/flowerinthenight/kubepfm"
-  version "1.5.5"
+  version "1.5.6"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/flowerinthenight/kubepfm/releases/download/v1.5.5/kubepfm_1.5.5_darwin_amd64.tar.gz"
-      sha256 "1df9e80b93f39726f9bcaca005bee9b30379340bc1af51b57b865b5ec5af538a"
+      url "https://github.com/flowerinthenight/kubepfm/releases/download/v1.5.6/kubepfm_1.5.6_darwin_amd64.tar.gz"
+      sha256 "fde7178f206790f84ccf8fc1a9524ac1c56fe98868b99762d0ea49bcfb90cea6"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/flowerinthenight/kubepfm/releases/download/v1.5.5/kubepfm_1.5.5_linux_amd64.tar.gz"
-      sha256 "b1c510a39d30ff22ed59b7b717252428606e325cb1892d9880f91abc204813e2"
+      url "https://github.com/flowerinthenight/kubepfm/releases/download/v1.5.6/kubepfm_1.5.6_linux_amd64.tar.gz"
+      sha256 "7c25a3a6ae1d9704efac9113a34fdb2e22a9da5406db8786ccb8713667dfcbc6"
     end
   end
 
