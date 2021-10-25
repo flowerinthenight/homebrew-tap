@@ -5,25 +5,28 @@
 class Athena2csv < Formula
   desc "Execute athena query and download csv result."
   homepage "https://github.com/flowerinthenight/athena2csv"
-  version "0.1.1"
-  bottle :unneeded
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/flowerinthenight/athena2csv/releases/download/v0.1.1/athena2csv_0.1.1_darwin_amd64.tar.gz"
-      sha256 "a0a818e4016e747ce525db145926aa712c99b10e2f9e2ddaab500c63d7407ff6"
+      url "https://github.com/flowerinthenight/athena2csv/releases/download/v0.1.2/athena2csv_0.1.2_darwin_amd64.tar.gz"
+      sha256 "56b3356599b12b14f47c3dcfbe04ab61e8d560763d169ba596569cee6299470a"
+
+      def install
+        bin.install "athena2csv"
+      end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/flowerinthenight/athena2csv/releases/download/v0.1.1/athena2csv_0.1.1_linux_amd64.tar.gz"
-      sha256 "845fbc87964c27f54de9a0328282cc7f548408853c05f03db1c3f7081de09f76"
-    end
-  end
+      url "https://github.com/flowerinthenight/athena2csv/releases/download/v0.1.2/athena2csv_0.1.2_linux_amd64.tar.gz"
+      sha256 "a884fd0ba15e951356e4f4e795b049fbf3dccc26826a230e9e0acfd05bb763a3"
 
-  def install
-    bin.install "athena2csv"
+      def install
+        bin.install "athena2csv"
+      end
+    end
   end
 
   test do
