@@ -5,25 +5,28 @@
 class Dysync < Formula
   desc "Sync DynamoDB table across two AWS accounts."
   homepage "https://github.com/flowerinthenight/dysync"
-  version "1.1.1"
-  bottle :unneeded
+  version "1.1.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/flowerinthenight/dysync/releases/download/v1.1.1/dysync_1.1.1_darwin_amd64.tar.gz"
-      sha256 "71af8ba7323ed0af61ef8c689405b2390e345ee3dc4d3eba6281ab55207f2262"
+      url "https://github.com/flowerinthenight/dysync/releases/download/v1.1.2/dysync_1.1.2_darwin_amd64.tar.gz"
+      sha256 "e829a6eaea2825c1c8757af267061fa1da38701f1b7403d65ca4b5607fe09a37"
+
+      def install
+        bin.install "dysync"
+      end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/flowerinthenight/dysync/releases/download/v1.1.1/dysync_1.1.1_linux_amd64.tar.gz"
-      sha256 "76a720d3b6e3caca7f75abc1e13d7c295db8b17d9ca5b1fd719c3da2c0aead6d"
-    end
-  end
+      url "https://github.com/flowerinthenight/dysync/releases/download/v1.1.2/dysync_1.1.2_linux_amd64.tar.gz"
+      sha256 "29be7170f419d5c5aa4b96702dd0c53dd1f83dcbc8598e97b5f0fb3ecaffdcf2"
 
-  def install
-    bin.install "dysync"
+      def install
+        bin.install "dysync"
+      end
+    end
   end
 
   test do
