@@ -5,11 +5,11 @@
 class Kubepfm < Formula
   desc "A simple port-forward wrapper tool for multiple pods/deployments/services."
   homepage "https://github.com/flowerinthenight/kubepfm"
-  version "1.6.2"
+  version "1.6.3"
 
   on_macos do
-    url "https://github.com/flowerinthenight/kubepfm/releases/download/v1.6.2/kubepfm_1.6.2_darwin_amd64.tar.gz"
-    sha256 "8fe5d8953d13f595bc6693add5141663612b3b95921183bc82e1156c7cd3ebc2"
+    url "https://github.com/flowerinthenight/kubepfm/releases/download/v1.6.3/kubepfm_1.6.3_darwin_amd64.tar.gz"
+    sha256 "a6e2e3f1e910da77b699892a919e4624ed6df7492644278e8ac78b4309aae31a"
 
     def install
       bin.install "kubepfm"
@@ -28,8 +28,8 @@ class Kubepfm < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/flowerinthenight/kubepfm/releases/download/v1.6.2/kubepfm_1.6.2_linux_amd64.tar.gz"
-      sha256 "73dc1ca7eac410b5083ba53c3c7cae3d8756f96caf492f53cde2aefb8a587aa3"
+      url "https://github.com/flowerinthenight/kubepfm/releases/download/v1.6.3/kubepfm_1.6.3_linux_amd64.tar.gz"
+      sha256 "66e1321b7652ddd342ef11527c80d37cc6e95d1926760da40ad62b2d499c0889"
 
       def install
         bin.install "kubepfm"
@@ -38,6 +38,6 @@ class Kubepfm < Formula
   end
 
   test do
-    assert_match /A simple port-forward wrapper tool for multiple pods\/deployments\/services\/, shell_output("#{bin}/kubepfm -h", 0)
+    assert_match /A simple port-forward wrapper tool for multiple pods\/deployments\/services/, shell_output("#{bin}/kubepfm -h", 0)
   end
 end
