@@ -5,11 +5,11 @@
 class Hedged < Formula
   desc "A generic daemon based on https://flowerinthenight/hedge/."
   homepage "https://github.com/flowerinthenight/hedged"
-  version "0.1.2"
+  version "0.2.0"
 
   on_macos do
-    url "https://github.com/flowerinthenight/hedged/releases/download/v0.1.2/hedged_0.1.2_darwin_amd64.tar.gz"
-    sha256 "eeb1a7e81744565b18185884da1696c6e49b7d3f6961195af489340d59213dcd"
+    url "https://github.com/flowerinthenight/hedged/releases/download/v0.2.0/hedged_0.2.0_darwin_amd64.tar.gz"
+    sha256 "ee85fac2990a3755f2556067e093794b73521b6fe4c65c569393d43e1f3cb009"
 
     def install
       bin.install "hedged"
@@ -29,8 +29,8 @@ class Hedged < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/flowerinthenight/hedged/releases/download/v0.1.2/hedged_0.1.2_linux_amd64.tar.gz"
-        sha256 "debcae9a411727e4a834ceaa816368efba7557a386a53eea2f0b66b77833600b"
+        url "https://github.com/flowerinthenight/hedged/releases/download/v0.2.0/hedged_0.2.0_linux_amd64.tar.gz"
+        sha256 "106e505595ec57a36e46ecc0b4f2b8808e646204dfa4bf648099f767f19a1bcb"
 
         def install
           bin.install "hedged"
