@@ -5,17 +5,17 @@
 class Kubepfm < Formula
   desc "A simple port-forward wrapper tool for multiple pods/deployments/services."
   homepage "https://github.com/flowerinthenight/kubepfm"
-  version "1.7.2"
+  version "1.7.3"
 
   on_macos do
-    url "https://github.com/flowerinthenight/kubepfm/releases/download/v1.7.2/kubepfm_1.7.2_darwin_amd64.tar.gz"
-    sha256 "1f7ce41c150a953b8da2630cdd6aa08315fad91ef8485765f5c7d889950fe385"
+    url "https://github.com/flowerinthenight/kubepfm/releases/download/v1.7.3/kubepfm_1.7.3_darwin_amd64.tar.gz"
+    sha256 "f48c7a04a547d01d40efc10f943c489a7bf8238f0dbc0a28af1f6e81d2507be9"
 
     def install
       bin.install "kubepfm"
     end
 
-    on_arm do
+    if Hardware::CPU.arm?
       def caveats
         <<~EOS
           The darwin_arm64 architecture is not supported for the Kubepfm
@@ -27,10 +27,10 @@ class Kubepfm < Formula
   end
 
   on_linux do
-    on_intel do
+    if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/flowerinthenight/kubepfm/releases/download/v1.7.2/kubepfm_1.7.2_linux_amd64.tar.gz"
-        sha256 "51520711de2e3a1e8066e94dae06828b9bbee49265f4ce578428dc05b9b93288"
+        url "https://github.com/flowerinthenight/kubepfm/releases/download/v1.7.3/kubepfm_1.7.3_linux_amd64.tar.gz"
+        sha256 "219f55f19aec7a668f7f95eca9854f7abf9fb988ecd1f5d2472da5dfc4ced5fc"
 
         def install
           bin.install "kubepfm"
