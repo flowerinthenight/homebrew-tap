@@ -5,11 +5,11 @@
 class Lunactl < Formula
   desc "Test cmdline for luna."
   homepage "https://github.com/flowerinthenight/lunactl"
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
-    url "https://github.com/flowerinthenight/lunactl/releases/download/v0.3.0/lunactl_0.3.0_darwin_amd64.tar.gz"
-    sha256 "dfb3fa660582e535865c0f04f95fd7616c4b7b1ae0932b015b49d8ab4e448a2b"
+    url "https://github.com/flowerinthenight/lunactl/releases/download/v0.3.1/lunactl_0.3.1_darwin_amd64.tar.gz"
+    sha256 "c4f1546746b7798e4c846a5a46b70643fdbc56801b90d6a7beba04c32f7455fb"
 
     def install
       bin.install "lunactl"
@@ -28,8 +28,8 @@ class Lunactl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/flowerinthenight/lunactl/releases/download/v0.3.0/lunactl_0.3.0_linux_amd64.tar.gz"
-      sha256 "df4f816535e80bc6546cd48fbbb5877b21d55bc53666df8e866b8873f6ef3e8f"
+      url "https://github.com/flowerinthenight/lunactl/releases/download/v0.3.1/lunactl_0.3.1_linux_amd64.tar.gz"
+      sha256 "51f8cab4228f64ac5c32b5dae818067610d71ce5fa8d78780c0f8c90517254d9"
       def install
         bin.install "lunactl"
       end
