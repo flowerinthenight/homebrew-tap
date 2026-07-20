@@ -5,11 +5,11 @@
 class GSshCmd < Formula
   desc "A simple wrapper to [ssh -t cmd] for AutoScaling Groups."
   homepage "https://github.com/flowerinthenight/g-ssh-cmd"
-  version "0.4.1"
+  version "0.5.0"
 
   on_macos do
-    url "https://github.com/flowerinthenight/g-ssh-cmd/releases/download/v0.4.1/g-ssh-cmd_0.4.1_darwin_amd64.tar.gz"
-    sha256 "9bcd83815799ba51239cbd488710fcd1b818d6608e9d06b2ef31b16230f37744"
+    url "https://github.com/flowerinthenight/g-ssh-cmd/releases/download/v0.5.0/g-ssh-cmd_0.5.0_darwin_amd64.tar.gz"
+    sha256 "bbd85b0c5edcc0dc1db12251c52dd6b6a83c8d28d842fa060075a1396ea1c39d"
 
     define_method(:install) do
       bin.install "g-ssh-cmd"
@@ -28,8 +28,8 @@ class GSshCmd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/flowerinthenight/g-ssh-cmd/releases/download/v0.4.1/g-ssh-cmd_0.4.1_linux_amd64.tar.gz"
-      sha256 "b9c8ccec27881067abc33be6be48693de12d461436c2a85748c3053ea5591081"
+      url "https://github.com/flowerinthenight/g-ssh-cmd/releases/download/v0.5.0/g-ssh-cmd_0.5.0_linux_amd64.tar.gz"
+      sha256 "2884e88b5d084ca595db0332a9e9a168df557c436a708666a90a004cdc641234"
       define_method(:install) do
         bin.install "g-ssh-cmd"
       end
