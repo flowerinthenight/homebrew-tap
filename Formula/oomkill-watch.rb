@@ -5,13 +5,13 @@
 class OomkillWatch < Formula
   desc "A simple kubectl wrapper tool for tailing OOMKilling events."
   homepage "https://github.com/flowerinthenight/oomkill-watch"
-  version "0.3.1"
+  version "0.3.2"
 
   on_macos do
-    url "https://github.com/flowerinthenight/oomkill-watch/releases/download/v0.3.1/oomkill-watch_0.3.1_darwin_amd64.tar.gz"
-    sha256 "d2f6bfce1cdfc06e29bfd4ae9314b549d87ecde621284dbb155c7f34b53338a0"
+    url "https://github.com/flowerinthenight/oomkill-watch/releases/download/v0.3.2/oomkill-watch_0.3.2_darwin_amd64.tar.gz"
+    sha256 "97b5be5ff3fbd8327b5414798a2be0d2bcd48cd35e223b1904cec9da8b60da62"
 
-    def install
+    define_method(:install) do
       bin.install "oomkill-watch"
     end
 
@@ -27,11 +27,10 @@ class OomkillWatch < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/flowerinthenight/oomkill-watch/releases/download/v0.3.1/oomkill-watch_0.3.1_linux_amd64.tar.gz"
-      sha256 "355a956e319ea9ab4cbdb35658921dd15227938ee1f388fe3a3a41f9164c278c"
-
-      def install
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/flowerinthenight/oomkill-watch/releases/download/v0.3.2/oomkill-watch_0.3.2_linux_amd64.tar.gz"
+      sha256 "251f23fd02accb59c9035f671c3849187b5c98838d530201e1385cdd97cac968"
+      define_method(:install) do
         bin.install "oomkill-watch"
       end
     end
