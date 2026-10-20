@@ -6,32 +6,32 @@ cask "jnh" do
     end
   end
 
-  version "0.48.0"
+  version "0.49.0"
 
   on_macos do
     on_arm do
-      sha256 "ddf1ff46fbeb7e09e24b34a4b4e97940407841e602933306cdbab8199b3eb14c"
+      sha256 "7610343596aeec5234ae4ae6893c4b5a14b0769bcb68170e3f881ad59203c287"
       url "https://storage.googleapis.com/jennah-cli-dist/cli/jnh-v#{version}/jnh-v#{version}-darwin-arm64.tar.gz"
     end
     on_intel do
-      sha256 "29247b74d483d2b41dda339fd1c0a990b36ea492f93e420b86df9be88eca5ac6"
+      sha256 "2f738211985cbebeb9d00158b8b6d0468e25d4d58dbb1873eb8dd867676688e8"
       url "https://storage.googleapis.com/jennah-cli-dist/cli/jnh-v#{version}/jnh-v#{version}-darwin-amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "2ab73f220b5d6e5fec7755d9b7a967cd5912ec6ee0fda01dca572577f4910541"
+      sha256 "943fc7f213cc015e8f5317635e909092a95112572a56e4d86244cea908ee115b"
       url "https://storage.googleapis.com/jennah-cli-dist/cli/jnh-v#{version}/jnh-v#{version}-linux-arm64.tar.gz"
     end
     on_intel do
-      sha256 "e38a71c717e5629a9735b1e71d53b5349571f51830828a8e8a40a30329df8d0e"
+      sha256 "7fb8f694b2f196e58f70f8e1b502cb7aeaf6462c08f4e1890f23dcfcda42cbde"
       url "https://storage.googleapis.com/jennah-cli-dist/cli/jnh-v#{version}/jnh-v#{version}-linux-amd64.tar.gz"
     end
   end
 
   name "jnh"
   desc "Command-line client for Jennah."
-  homepage "https://jennah.nightblue.io/docs/"
+  homepage "https://getjennah.alphaus.cloud/docs/"
 
   livecheck do
     skip "Auto-generated on release."
