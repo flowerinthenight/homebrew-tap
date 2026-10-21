@@ -6,25 +6,25 @@ cask "jnh" do
     end
   end
 
-  version "0.49.0"
+  version "0.50.0"
 
   on_macos do
     on_arm do
-      sha256 "7610343596aeec5234ae4ae6893c4b5a14b0769bcb68170e3f881ad59203c287"
+      sha256 "47affa0f89a7ec88961cb5613911a9460ee14c7fd0b9ee4c8e277a09beaf39bb"
       url "https://storage.googleapis.com/jennah-cli-dist/cli/jnh-v#{version}/jnh-v#{version}-darwin-arm64.tar.gz"
     end
     on_intel do
-      sha256 "2f738211985cbebeb9d00158b8b6d0468e25d4d58dbb1873eb8dd867676688e8"
+      sha256 "e1941908b106ec0f7e93ec4fe513b77558a896b56f7d7fb86effa73de54e982d"
       url "https://storage.googleapis.com/jennah-cli-dist/cli/jnh-v#{version}/jnh-v#{version}-darwin-amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "943fc7f213cc015e8f5317635e909092a95112572a56e4d86244cea908ee115b"
+      sha256 "e8fb8433c13be984d87a4177ca96a74a76651e0a323733994c2cada9b6b58930"
       url "https://storage.googleapis.com/jennah-cli-dist/cli/jnh-v#{version}/jnh-v#{version}-linux-arm64.tar.gz"
     end
     on_intel do
-      sha256 "7fb8f694b2f196e58f70f8e1b502cb7aeaf6462c08f4e1890f23dcfcda42cbde"
+      sha256 "20c5cbf41ef2f91cdf75accfb424c22a76810638aa4e95075b9367a2fee25276"
       url "https://storage.googleapis.com/jennah-cli-dist/cli/jnh-v#{version}/jnh-v#{version}-linux-amd64.tar.gz"
     end
   end
